@@ -1,0 +1,28 @@
+--cpu Cortex-M7.fp.dp
+"8led\startup_stm32f767xx.o"
+"8led\main.o"
+"8led\gpio.o"
+"8led\tim.o"
+"8led\stm32f7xx_it.o"
+"8led\stm32f7xx_hal_msp.o"
+"8led\stm32f7xx_hal_cortex.o"
+"8led\stm32f7xx_hal_tim.o"
+"8led\stm32f7xx_hal_tim_ex.o"
+"8led\stm32f7xx_hal_rcc.o"
+"8led\stm32f7xx_hal_rcc_ex.o"
+"8led\stm32f7xx_hal_flash.o"
+"8led\stm32f7xx_hal_flash_ex.o"
+"8led\stm32f7xx_hal_gpio.o"
+"8led\stm32f7xx_hal_dma.o"
+"8led\stm32f7xx_hal_dma_ex.o"
+"8led\stm32f7xx_hal_pwr.o"
+"8led\stm32f7xx_hal_pwr_ex.o"
+"8led\stm32f7xx_hal.o"
+"8led\stm32f7xx_hal_i2c.o"
+"8led\stm32f7xx_hal_i2c_ex.o"
+"8led\stm32f7xx_hal_exti.o"
+"8led\system_stm32f7xx.o"
+--library_type=microlib --strict --scatter "8LED\8LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "8LED.map" -o 8LED\8LED.axf
